@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Progress Bars Demo</title>
+    <script src="index.js"></script>
+    <style>
+      .progress {
+        margin: 2em 0;
+      }
+      .progressBar {
+        width: 0px;
+        justify-content: center;
+        border-radius: 13px;
+        background-color: rgb(91, 94, 166);
+        margin: 1em 0em;
+        left: calc(50% - 100px);
+        position: relative;
+        height: 10px;
+      }
+      body {
+        text-align: center;
+      }
+      button {
+        border-radius: 0.45em;
+        background-color: bisque;
+        border: 1px solid rgb(247, 147, 25);
+        padding: 10px 20px;
+        cursor: pointer;
+        color: rgb(247, 147, 25);
+      }
+      button:hover {
+        background-color: rgb(247, 147, 25);
+        color: white;
+      }
+      button:disabled {
+        background-color: rgb(211, 211, 211);
+        color: grey;
+        border: 1px solid grey;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Progress Bars</h1>
+
+    <div class="progress"></div>
+
+    <button id="addProgressBar" onclick="addProgressBar()">
+      Add Progress Bar
+    </button>
+  </body>
+</html>
